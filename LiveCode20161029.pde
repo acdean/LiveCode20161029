@@ -23,7 +23,7 @@ void draw() {
   rotateY(ry);
   
   c0 += d0;
-  stroke(c0 % 360);
+  stroke(c0 % 360, 100, 100);
   for (int i = -SZ ; i < SZ ; i += GAP) {
     line(i, -SZ, i, SZ);
   }
