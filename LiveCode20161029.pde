@@ -42,7 +42,7 @@ void draw() {
   ry += dy;
   rotateX(rx);
   rotateY(ry);
-  strokeWeight(10);
+  strokeWeight(30);
   
   c0 += d0;
   stroke(c0 % 360, 100, 100);
