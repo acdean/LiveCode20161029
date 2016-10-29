@@ -2,7 +2,7 @@ import peasy.*;
 
 PeasyCam cam;
 int SZ = 200;
-int GAP = 10;
+int GAP = 20;
 float rx, ry, dx, dy;
 int c0, d0, c1, d1, c2, d2, c3, d3, c4, d4, c5, d5;
 
