@@ -93,3 +93,7 @@ class Cage {
     }
   }
 }
+
+void keyPressed() {
+  saveFrame("frame####.png");
+}
