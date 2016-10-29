@@ -26,34 +26,35 @@ void draw() {
   ry += dy;
   rotateX(rx);
   rotateY(ry);
+  strokeWeight(10);
   
   c0 += d0;
-  stroke(c0 % 360, 100, 100);
+  stroke(c0 % 360, 100, 100, 50);
   for (int i = -SZ ; i < SZ ; i += GAP) {
     line(i, -SZ, -SZ, i, SZ, -SZ);
   }
   c1 += d1;
-  stroke(c1 % 360, 100, 100);
+  stroke(c1 % 360, 100, 100, 50);
   for (int i = -SZ ; i < SZ ; i += GAP) {
     line(i, -SZ, SZ, i, SZ, SZ);
   }
   c2 += d2;
-  stroke(c2 % 360, 100, 100);
+  stroke(c2 % 360, 100, 100, 50);
   for (int i = -SZ ; i < SZ ; i += GAP) {
     line(i, SZ, -SZ, i, SZ, SZ);
   }
   c3 += d3;
-  stroke(c3 % 360, 100, 100);
+  stroke(c3 % 360, 100, 100, 50);
   for (int i = -SZ ; i < SZ ; i += GAP) {
     line(i, -SZ, -SZ, i, -SZ, SZ);
   }
   c4 += d4;
-  stroke(c4 % 360, 100, 100);
+  stroke(c4 % 360, 100, 100, 50);
   for (int i = -SZ ; i < SZ ; i += GAP) {
     line(SZ, i, -SZ, SZ, i, SZ);
   }
   c5 += d5;
-  stroke(c5 % 360, 100, 100);
+  stroke(c5 % 360, 100, 100, 50);
   for (int i = -SZ ; i < SZ ; i += GAP) {
     line(-SZ, i, -SZ, -SZ, i, SZ);
   }
