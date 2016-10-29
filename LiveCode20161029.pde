@@ -8,7 +8,7 @@ int c0, d0, c1, d1, c2, d2, c3, d3, c4, d4, c5, d5;
 
 void setup() {
   size(640, 480, OPENGL);
-  cam = new PeasyCam(this, 500);
+  cam = new PeasyCam(this, 0);
   colorMode(HSB, 360, 100, 100);
   dx = random(-.02, .02);
   dy = random(-.02, .02);
@@ -30,32 +30,32 @@ void draw() {
   
   c0 += d0;
   stroke(c0 % 360, 100, 100, 50);
-  for (int i = -SZ ; i < SZ ; i += GAP) {
+  for (int i = -SZ ; i <= SZ ; i += GAP) {
     line(i, -SZ, -SZ, i, SZ, -SZ);
   }
   c1 += d1;
   stroke(c1 % 360, 100, 100, 50);
-  for (int i = -SZ ; i < SZ ; i += GAP) {
+  for (int i = -SZ ; i <= SZ ; i += GAP) {
     line(i, -SZ, SZ, i, SZ, SZ);
   }
   c2 += d2;
   stroke(c2 % 360, 100, 100, 50);
-  for (int i = -SZ ; i < SZ ; i += GAP) {
+  for (int i = -SZ ; i <= SZ ; i += GAP) {
     line(i, SZ, -SZ, i, SZ, SZ);
   }
   c3 += d3;
   stroke(c3 % 360, 100, 100, 50);
-  for (int i = -SZ ; i < SZ ; i += GAP) {
+  for (int i = -SZ ; i <= SZ ; i += GAP) {
     line(i, -SZ, -SZ, i, -SZ, SZ);
   }
   c4 += d4;
   stroke(c4 % 360, 100, 100, 50);
-  for (int i = -SZ ; i < SZ ; i += GAP) {
+  for (int i = -SZ ; i <= SZ ; i += GAP) {
     line(SZ, i, -SZ, SZ, i, SZ);
   }
   c5 += d5;
   stroke(c5 % 360, 100, 100, 50);
-  for (int i = -SZ ; i < SZ ; i += GAP) {
+  for (int i = -SZ ; i <= SZ ; i += GAP) {
     line(-SZ, i, -SZ, -SZ, i, SZ);
   }
 }
