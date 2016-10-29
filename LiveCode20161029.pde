@@ -7,6 +7,7 @@ int GAP = 10;
 
 void setup() {
   size(640, 480, OPENGL);
+  cam - new PeasyCam(this, 500);
   colorMode(HSB, 360, 100, 100);
 }
 
