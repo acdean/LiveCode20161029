@@ -13,12 +13,18 @@ void setup() {
   colorMode(HSB, 360, 100, 100);
   dx = random(-.02, .02);
   dy = random(-.02, .02);
-  d0 = (int)random(3);
-  d1 = (int)random(3);
-  d2 = (int)random(3);
-  d3 = (int)random(3);
-  d4 = (int)random(3);
-  d5 = (int)random(3);
+  d0 = (int)random(5);
+  d1 = (int)random(5);
+  d2 = (int)random(5);
+  d3 = (int)random(5);
+  d4 = (int)random(5);
+  d5 = (int)random(5);
+  c0 = (int)random(360);
+  c1 = (int)random(360);
+  c2 = (int)random(360);
+  c3 = (int)random(360);
+  c4 = (int)random(360);
+  c5 = (int)random(360);
 }
 
 void draw() {
