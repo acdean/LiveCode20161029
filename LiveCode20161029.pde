@@ -1,3 +1,5 @@
+import peasy.*;
+
 PeasyCam cam;
 
 void setup() {
