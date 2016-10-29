@@ -13,7 +13,7 @@ void setup() {
 void draw() {
   background(frameCount % 360, 50, 50);
   
-  for (int i = -SZ, i < SZ ; i += GAP) {
+  for (int i = -SZ ; i < SZ ; i += GAP) {
     line(i, -SZ, i, SZ);
   }
 }
